@@ -50,14 +50,10 @@ export default class StarScren extends Component {
                 <Text style={styles.text}>{Math.round(data.gravity)}</Text>
                 <Text style={styles.text}>Gravity</Text>
               </View>
-              <View>
-                <Text style={styles.text}>{data.radius}</Text>
-                <Text style={styles.text}>Radius</Text>
-              </View>
+              //Add the radius
             </View>
             <View style={styles.lowerContainer}>
-              <Text style={styles.text}>{data.distance}</Text>
-              <Text style={styles.text}>Distance from Earth</Text>
+             //Add the distance
             </View>
           </ImageBackground>
           <SafeAreaView />
