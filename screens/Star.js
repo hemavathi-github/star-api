@@ -25,14 +25,8 @@ export default class StarScren extends Component {
 
   getStarDetails = name => {
     const url = `http://localhost:5000/star?name=${name}`;
-    axios
-      .get(url)
-      .then(response => {
-        this.setState({ data: response.data.data });
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+   
+   //add the get function
   };
 
   render() {
