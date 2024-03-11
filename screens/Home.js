@@ -19,14 +19,7 @@ export default class HomeScreen extends Component {
 
   getData = async () => {
     const url = "http://localhost:5000/";
-    axios
-      .get(url)
-      .then(response => {
-        this.setState({ data: response.data.data });
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+   //get the url
   };
 
   renderItems = ({ item, index }) => (
@@ -62,11 +55,7 @@ export default class HomeScreen extends Component {
         </View>
         {data.length > 0 ? (
           <View style={styles.upperContainer}>
-            <FlatList
-              data={data}
-              renderItem={this.renderItems}
-              keyExtractor={this.keyExtractor}
-            />
+           //Add the flalist
           </View>
         ) : null}
       </View>
